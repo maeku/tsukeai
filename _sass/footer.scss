@@ -1,0 +1,16 @@
+footer {
+  background-color: $accent-color;
+  display: grid;
+  grid-gap: 2rem;
+  grid-row-gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
+footer div {
+  &:last-child {
+    grid-column: span 3; 
+    grid-row: 2;
+  }
+}
+
+

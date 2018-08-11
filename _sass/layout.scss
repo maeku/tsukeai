@@ -1,0 +1,42 @@
+body {
+  border: 1rem solid $accent-color;
+  margin: 0 auto;
+  max-width: 1440px;
+  
+  @media (min-width: 1440px) { margin: 4rem auto; }
+}
+
+body .wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+}
+
+main {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 100%; 
+  grid-template-rows: auto;
+
+  @media (min-width: 740px) { grid-template-columns: 60% 40%; }
+}
+
+main .content,
+main .showcase {
+  max-width: 42rem;
+}
+
+header,
+main {
+  margin: 1rem;
+  
+  @media (min-width: 740px) { margin: 4rem; } 
+}
+
+footer {
+  padding: 1rem;
+  
+  @media (min-width: 740px) { padding: 4rem; }
+}
+
